@@ -22,9 +22,10 @@ jobs:
           npm i
           npm run build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.6
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           branch: gh-pages
           folder: dist
           token: ${{ secrets.ACCESS_TOKEN }}
+          clean: true
