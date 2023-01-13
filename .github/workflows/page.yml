@@ -27,6 +27,6 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+          target_folder: site
           token: ${{ secrets.ACCESS_TOKEN }}
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
           clean: true
